@@ -1,0 +1,25 @@
+portfolio/
+├── index.html              # Home page
+├── index.css               # Styles for index.html
+
+├── about.html              # About Me section
+├── about.css               # Styles for about.html
+
+├── projects.html           # Projects section
+├── projects.css            # Styles for projects.html
+
+├── certifications.html     # Certifications section
+├── certifications.css      # Styles for certifications.html
+
+├── profiles.html           # Coding & social profiles
+├── profiles.css            # Styles for profiles.html
+
+├── initiatives.html        # Initiatives and contributions
+├── initiatives.css         # Styles for initiatives.html
+
+├── bottomdiv.css           # Common footer or lower-section styles
+├── style.css               # Common styles across all pages
+
+├── script.js               # JavaScript file for interactivity
+
+└── README.md               # Project documentation
