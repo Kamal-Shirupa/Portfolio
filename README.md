@@ -1,8 +1,11 @@
 🧑‍💻 Shirupa Kamal – Portfolio
+
+
+
 Welcome to my Personal Portfolio Website – a digital space where I showcase my projects, skills, certifications, and initiatives as a Computer Science student passionate about Artificial Intelligence & Machine Learning.
 
 🚀 Live Preview
-🌐 Visit My Portfolio (Replace with your live website link)
+🌐 https://kamal-shirupa.github.io/Portfolio/
 
 📌 Sections Included
 🔹 Home
