@@ -1,0 +1,28 @@
+🔗 Sections Overview
+🔹 index.html
+A warm welcome with the tagline:
+"Hi, I'm Kamal. Crafting the Future with Code."
+
+🔹 about.html
+My journey as a CSE (AI & ML) student, strengths, passions, and aspirations.
+
+🔹 projects.html
+Highlights of my key academic and personal projects with brief descriptions.
+
+🔹 certifications.html
+Verified certifications from AWS, Salesforce, etc., with links and badges.
+
+🔹 profiles.html
+External profiles: GitHub, LinkedIn, LeetCode, CodeChef, and others.
+
+🔹 initiatives.html
+Workshops, student chapters, community events, and leadership activities.
+
+🛠️ Tech Stack
+HTML5 – Page structure
+
+CSS3 – Styling (page-specific + common styles)
+
+JavaScript – Interactive behaviors (in script.js)
+
+Hosting – GitHub Pages 
