@@ -1,0 +1,231 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling during preloader */
+}
+
+/* Preloader Section */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Background color during preloading */
+    z-index: 9999;
+    pointer-events: none; /* Ensures it doesn't interfere with page clicks */
+}
+
+/* Preloader Logo */
+#logo {
+    width: 250px; /* Adjust size */
+    height: auto;
+    transform-origin: center;
+}
+
+/* Ensure content is hidden initially */
+#content {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    height: 100%; 
+}
+
+/* Main Content visible after preloader */
+body.loaded {
+    overflow: auto; 
+}
+
+/* Middle Section */
+.middle {
+    flex: 1;
+    background-color: #A9B5DF; 
+}
+
+/* Bottom Section */
+.bottom {
+    height: 7vh;
+    background-color: #7886C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top Navigation Bar */
+.top {
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFF2F2;
+    gap: 30px;
+    transition: height 0.3s ease;
+}
+
+.top:hover {
+    height: 15vh;
+}
+
+.top:hover .logo img {
+    width: 220px;
+    top: 7px;
+    left: 5px;
+    filter: drop-shadow(0 0 15px black);
+}
+
+.top .logo img:hover {
+    filter: drop-shadow(0 0 30px black);
+}
+
+/* Logo in the Navbar */
+.logo img {
+    margin-right: 40px;
+    position: static;
+    top: 5px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px var(--accent-color));
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation Styles */
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.top:hover .nav ul li a {
+    font-size: 22px;
+}
+
+.nav ul li a:hover {
+    color:#2C2C2C;
+}
+
+.nav ul li a {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav ul li a:hover {
+    color: #2C3A60;
+    text-shadow: 0 0 5px #666666;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFF2F2;
+    gap: 30px;
+    z-index: 1000;
+    transition: height 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.middle {
+    flex: 1;
+    background-color: #A9B5DF;
+    padding-top: 15vh; /* Matches .top:hover height */
+    padding-bottom: 7vh; /* For bottom bar space */
+    overflow-y: auto;
+}
+
+
+
+
+/* Hero section with background */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Text overlay */
+.hero-overlay {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 50px;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  max-width: 500px;
+}
+
+/* Text styles */
+.hero-title {
+  font-size: 2.8rem;
+  color: #00eaff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #00eaff88;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.hero-subtitle span {
+  color: #00eaff;
+  font-weight: bold;
+}

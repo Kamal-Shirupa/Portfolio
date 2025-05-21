@@ -1,0 +1,27 @@
+
+
+
+.middle {
+  position: fixed;  /* sticks it to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;     /* full width */
+  height: 100vh;    /* full viewport height */
+  overflow: hidden; /* no scrolling inside */
+  background-color: #A9B5DF; /* keep your bg */
+  z-index: 10;      /* above other content */
+}
+
+
+
+.middle {
+    flex: 1;
+    /* background-color: #A9B5DF; */
+    padding-top: 15vh; /* Matches .top:hover height */
+    padding-bottom: 7vh; /* For bottom bar space */
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* covers entire container */
+    background-position: center center;
+}
+

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    color: #333;
+}
+
+.certificate-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    color: white;
+    display: flex;
+    background-color: #2C3A60;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.certificate-image {
+    width: 250px;
+    background-color: #f0f0f0;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.certificate-content {
+    padding: 25px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+    color: wheat;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #7f8c8d;
+    font-weight: normal;
+}
+
+.period {
+    color: #95a5a6;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+.link-container {
+    display: flex;
+    margin: 15px 0;
+}
+
+.link-container input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-family: monospace;
+    background-color: #f9f9f9;
+}
+
+.link-container button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+
+.link-container button:hover {
+    background-color: #2980b9;
+}
+
+.share-btn {
+    padding: 8px 15px;
+    background-color: #ecf0f1;
+    color: #34495e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+
+.share-btn:hover {
+    background-color: #d5dbdb;
+}
+
+@media (max-width: 768px) {
+    .certificate-card {
+        flex-direction: column;
+    }
+    
+    .certificate-image {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.middle{
+    background-color: #A9B5DF;
+}

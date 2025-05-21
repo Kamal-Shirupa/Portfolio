@@ -1,0 +1,111 @@
+.bottom-section {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.social-media {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* filter: grayscale(50%); */
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+    filter:brightness(1.2); /* Slight glow effect */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); */
+}
+
+.animation {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Reset & base styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* Hero section with background */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url('assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Text overlay */
+.hero-overlay {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 50px;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  max-width: 500px;
+}
+
+/* Text styles */
+.hero-title {
+  font-size: 2.8rem;
+  color: #00eaff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #00eaff88;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.hero-subtitle span {
+  color: #00eaff;
+  font-weight: bold;
+}

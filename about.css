@@ -1,0 +1,537 @@
+.contact-container {
+    display: flex;
+    height: calc(100vh - 22vh);
+    background-color: #A9B5DF;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-image {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+    padding: 20px;
+  }
+  
+  .contact-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  }
+  
+  #contact-form {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;  /* So heading is on top */
+    align-items: flex-start; /* Align heading and form left */
+    justify-content: center;
+    padding: 40px;
+    background-color: #1E1E1E;
+  }
+  
+  .contact-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+  }
+  
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 20px;
+  }
+  
+  .form-grid input,
+  .form-grid textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #2C2C2C;
+    resize: vertical;
+  }
+  
+  .form-grid textarea {
+    min-height: 120px;
+  }
+  
+  .form-grid button {
+    padding: 12px;
+    background-color: white;
+    color: #1E1E1E;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-grid button:hover {
+    background-color: #4b4b4b;
+  }
+  /* Base */
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.timeline-heading {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.zzz {
+  text-align: center;
+  font-size: 4rem;
+  margin: 60px 0 40px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.zzz::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #000;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* del */
+
+.timeline-main-circle {
+  width: 100px;
+  height: 100px;
+  background: #555;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 180px;         /* Starts below heading */
+  bottom: 50px;       /* Ends 50px above container bottom (increase to extend it more) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  background: #444;
+  z-index: 1;
+}
+
+
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+over-panel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.hover-panel.left {
+  left: 0;
+}
+
+.hover-panel.right {
+  right: 0;
+}
+
+.hover-panel img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hover-panel .text {
+  color: white;
+  padding: 20px;
+  max-width: 300px;
+  align-items: left;
+}
+
+.timeline-item:hover .hover-panel {
+  opacity: 1;
+  width: 400px;
+  padding: 20px;
+}
+.timeline-label {
+  font-size: 0.8rem; /* small and neat */
+  color: rgba(255, 255, 255, 0.6); /* soft contrast */
+  margin-top: 0.5rem;
+  font-weight: 400;
+} 
+
+
+/* del */
+
+
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background-color: #A9B5DF; /* Match your theme */
+  color: #f5f5f5;
+  gap: 50px;
+}
+
+.profile-text {
+  flex: 1;
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.profile-text h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #111; /* Black text */
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.profile-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.profile-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: right;
+}
+
+.profile-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Slide-in animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .profile-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .profile-image {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .profile-text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 100px 0;
+  position: relative;
+}
+
+/* Left-side Image */
+.timeline-image {
+  position: relative;
+  width: 420px;
+  height: 300px;
+  border: 4px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.timeline-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.timeline-image .alt-image {
+  opacity: 0;
+}
+
+.timeline-item:hover .alt-image {
+  opacity: 1;
+}
+
+.timeline-item:hover .default-image {
+  opacity: 0;
+}
+
+/* Center Circle */
+.timeline-circle {
+  width: 140px;
+  height: 140px;
+  background: #444;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  z-index: 10;
+  transition: transform 0.3s ease; 
+}
+
+.timeline-item:hover .timeline-circle {
+  transform: scale(1.15);
+}
+
+
+/* Right Text Box */
+.timeline-text {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 420px; 
+  min-height: 300px;
+  font-size: 1rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.timeline-text h4, .timeline-text p {
+  margin: 4px 0;
+}
+
+.default-text, .alt-text {
+  transition: opacity 0.3s ease;
+}
+
+.alt-text {
+  display: none;
+}
+
+.timeline-item:hover .default-text {
+  display: none;
+}
+
+.timeline-item:hover .alt-text {
+  display: block;
+}
+.timeline-image,
+.timeline-text {
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-image,
+.timeline-item:hover .timeline-text {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+.timeline-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 100px 0;
+  flex-wrap: wrap; /* For mobile fallback */
+}
+
+/* === Left Image Block === */
+.timeline-image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3bef0;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.alt-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* === On Hover, Show Alt Image === */
+.timeline-item:hover .default-image {
+  opacity: 0;
+}
+.timeline-item:hover .alt-image {
+  opacity: 1;
+}
+
+/* === Center Circle === */
+.timeline-circle {
+  width: 140px;
+  height: 140px;
+  background: #333;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Optional Hover Effect */
+.timeline-circle:hover {
+  transform: scale(1.05);
+}
+
+/* === Right Text Block === */
+.timeline-text {
+  width: 400px;
+  color: white;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Alt text hidden by default */
+.alt-text {
+  display: none;
+}
+
+/* Optional: Swap Text on Hover */
+.timeline-item:hover .default-text {
+  display: none;
+}
+.timeline-item:hover .alt-text {
+  display: block;
+}
+
+/* === Responsive: Mobile Stack === */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .timeline-circle {
+    order: 2;
+  }
+
+  .timeline-image,
+  .timeline-text {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+
+.timeline-container {
+  position: relative;
+  padding: 60px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 400px;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 4px; /* or 2px depending on what looks best */
+  height: 800px;
+  background-color: #000; /* or whatever color matches your theme */
+  z-index: 1;
+}
+
